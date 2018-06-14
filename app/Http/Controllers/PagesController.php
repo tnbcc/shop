@@ -10,4 +10,11 @@ class PagesController extends Controller
     {
         return view('pages.root');
     }
+
+    //验证邮箱页面
+
+    public function emailVerifyNotice(Request $request)
+    {
+        return view('pages.email_verify_notice');
+    }
 }
