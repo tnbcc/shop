@@ -36,6 +36,7 @@ if (token) {
 } else {
     console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
 }
+require('sweetalert');
 
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
