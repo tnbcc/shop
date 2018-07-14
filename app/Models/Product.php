@@ -5,6 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 
+/**
+ * App\Models\Product
+ *
+ * @property-read mixed $image_url
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\ProductSku[] $skus
+ * @mixin \Eloquent
+ */
 class Product extends Model
 {
     protected $fillable = [

@@ -4,6 +4,13 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * App\Models\CartItem
+ *
+ * @property-read \App\Models\ProductSku $productSku
+ * @property-read \App\Models\User $user
+ * @mixin \Eloquent
+ */
 class CartItem extends Model
 {
     protected $fillable = ['amount'];

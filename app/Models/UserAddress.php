@@ -4,6 +4,13 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * App\Models\UserAddress
+ *
+ * @property-read mixed $full_address
+ * @property-read \App\Models\User $user
+ * @mixin \Eloquent
+ */
 class UserAddress extends Model
 {
     protected $fillable = [

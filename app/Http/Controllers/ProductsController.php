@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Exceptions\InvalidRequestException;
@@ -45,7 +46,6 @@ class ProductsController extends Controller
         'search' => $search,
         'order'  => $order,
     ];
-
         return view('products.index',compact('products','filters'));
     }
 
@@ -95,6 +95,7 @@ class ProductsController extends Controller
 
     public function favorites(Request $request)
     {
+        
         $products = $request->user()->favoriteProducts()->paginate(16);
 
         return view('products.favorites',compact('products'));
