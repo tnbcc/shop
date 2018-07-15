@@ -4,6 +4,13 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * App\Models\Order
+ *
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\OrderItem[] $items
+ * @property-read \App\Models\User $user
+ * @mixin \Eloquent
+ */
 class Order extends Model
 {
     const REFUND_STATUS_PENDING = 'pending';
